@@ -1,0 +1,18 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: account-service
+  devtools:
+    restart:
+      enabled: true
+
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+    config:
+      discovery:
+        enabled: false
+        service-id: config-server
